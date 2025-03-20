@@ -4,7 +4,7 @@ document.getElementById("surveyForm").addEventListener("submit", function(event)
     const formData = new FormData(event.target);
     const jsonData = Object.fromEntries(formData.entries());
 
-    fetch("https://script.google.com/macros/s/AKfycbzabF8vVz80tyoQzcgZP0KWGWSbeVTKpg8nYFg2ynV50dvi89puAPr5JpXqghs8ecUlMg/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbwIbJj6NB-BFmt-PHryOq2KSXAEP8cbm9hzlyb6_RMt_RTWuMbJu6KVFA6zF0dXMdGW7g/exec", {
         method: "POST",
         body: JSON.stringify(jsonData),
         headers: {
