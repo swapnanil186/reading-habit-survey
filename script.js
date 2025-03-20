@@ -4,7 +4,7 @@ document.getElementById("surveyForm").addEventListener("submit", function(event)
     const formData = new FormData(event.target);
     const jsonData = Object.fromEntries(formData.entries());
 
-    fetch("YOUR_GOOGLE_APPS_SCRIPT_URL_HERE", {
+    fetch("https://script.google.com/macros/s/AKfycbzabF8vVz80tyoQzcgZP0KWGWSbeVTKpg8nYFg2ynV50dvi89puAPr5JpXqghs8ecUlMg/exec", {
         method: "POST",
         body: JSON.stringify(jsonData),
         headers: {
