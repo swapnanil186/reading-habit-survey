@@ -3,77 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comprehensive Reading Habits Survey</title>
+    <title>Reading Habits of College Students - Survey</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Comprehensive Reading Habits Survey</h1>
+        <h1>Reading Habits of College Students</h1>
+        <h2>Survey by Group 7</h2>
         <form id="surveyForm">
             
-            <h2>Section 1: Demographic Information</h2>
-            <label>Gender:</label>
-            <select name="gender" required>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="Others">Others</option>
-            </select>
+            <!-- Section 1: Demographic Information -->
+            <fieldset>
+                <legend>Section 1: Demographic Information</legend>
 
-            <label>Age Group:</label>
-            <select name="age_group" required>
-                <option value="18-25">18-25</option>
-                <option value="26-35">26-35</option>
-                <option value="36-45">36-45</option>
-                <option value="46+">46+</option>
-            </select>
+                <label>1. Gender:</label><br>
+                <input type="radio" name="gender" value="Male"> Male<br>
+                <input type="radio" name="gender" value="Female"> Female<br>
+                <input type="radio" name="gender" value="Prefer not to say"> Prefer not to say<br>
+                <input type="radio" name="gender" value="Others"> Others<br><br>
 
-            <label>Education Level:</label>
-            <select name="education" required>
-                <option value="High School">High School</option>
-                <option value="Undergraduate">Undergraduate</option>
-                <option value="Postgraduate">Postgraduate</option>
-                <option value="Doctorate">Doctorate</option>
-            </select>
+                <label for="year">2. Year of Study:</label><br>
+                <select name="year" id="year">
+                    <option value="1st Year">1st Year</option>
+                    <option value="2nd Year">2nd Year</option>
+                    <option value="3rd Year">3rd Year</option>
+                    <option value="4th Year">4th Year</option>
+                    <option value="Other">Other (please specify)</option>
+                </select>
+                <input type="text" name="year_other" placeholder="Specify if Other"><br><br>
 
-            <h2>Section 2: Reading Habits</h2>
-            <label>How often do you read books?</label>
-            <select name="reading_frequency" required>
-                <option value="Daily">Daily</option>
-                <option value="Weekly">Weekly</option>
-                <option value="Monthly">Monthly</option>
-                <option value="Rarely">Rarely</option>
-                <option value="Never">Never</option>
-            </select>
+                <label>3. Stream of Study:</label><br>
+                <input type="radio" name="stream" value="STEM"> STEM (Science, Technology, Engineering, Mathematics)<br>
+                <input type="radio" name="stream" value="Humanities"> Humanities<br>
+                <input type="radio" name="stream" value="Commerce"> Commerce<br>
+                <input type="radio" name="stream" value="Other"> Other (please specify) <input type="text" name="stream_other"><br><br>
+            </fieldset>
 
-            <label>Preferred book genres (select multiple):</label>
-            <select name="book_genres" multiple required>
-                <option value="Fiction">Fiction</option>
-                <option value="Non-Fiction">Non-Fiction</option>
-                <option value="Mystery">Mystery</option>
-                <option value="Science Fiction">Science Fiction</option>
-                <option value="Fantasy">Fantasy</option>
-                <option value="Biography">Biography</option>
-                <option value="Self-Help">Self-Help</option>
-                <option value="Historical">Historical</option>
-            </select>
+            <!-- Section 2: Reading Habits -->
+            <fieldset>
+                <legend>Section 2: Reading Habits</legend>
 
-            <label>Do you prefer digital books or physical books?</label>
-            <select name="book_format" required>
-                <option value="Digital">Digital</option>
-                <option value="Physical">Physical</option>
-                <option value="Both">Both</option>
-            </select>
+                <label>4. How often do you read books?</label><br>
+                <input type="radio" name="reading_frequency" value="Daily"> Daily<br>
+                <input type="radio" name="reading_frequency" value="Weekly"> Weekly<br>
+                <input type="radio" name="reading_frequency" value="Monthly"> Monthly<br>
+                <input type="radio" name="reading_frequency" value="Rarely"> Rarely<br>
+                <input type="radio" name="reading_frequency" value="Never"> Never<br><br>
 
-            <label>Would you be interested in participating in book discussions?</label>
-            <select name="book_discussions" required>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-                <option value="Maybe">Maybe</option>
-            </select>
+                <label>5. Preferred book genres (Select all that apply):</label><br>
+                <input type="checkbox" name="genres" value="Crime and Mystery"> Crime and Mystery<br>
+                <input type="checkbox" name="genres" value="Fantasy"> Fantasy<br>
+                <input type="checkbox" name="genres" value="Science Fiction"> Science Fiction<br>
+                <input type="checkbox" name="genres" value="Romance"> Romance<br>
+                <input type="checkbox" name="genres" value="Biography/Literature"> Biography/Literature<br>
+                <input type="checkbox" name="genres" value="Historical"> Historical<br>
+                <input type="checkbox" name="genres" value="Self-Help"> Self-Help<br>
+                <input type="checkbox" name="genres" value="Comedy"> Comedy<br>
+                <input type="checkbox" name="genres" value="Horror"> Horror<br>
+                <input type="checkbox" name="genres" value="Satire"> Satire<br>
+                <input type="checkbox" name="genres" value="Devotional/Mythology"> Devotional/Mythology<br>
+                <input type="checkbox" name="genres" value="Other"> Other (please specify) <input type="text" name="genres_other"><br><br>
+            </fieldset>
+
+            <!-- Section 3: Influence on Reading Habits -->
+            <fieldset>
+                <legend>Section 3: Influence on Reading Habits</legend>
+
+                <label>8. Does reading non-curriculum books improve academic performance?</label><br>
+                <input type="radio" name="improves_academics" value="Yes"> Yes<br>
+                <input type="radio" name="improves_academics" value="No"> No<br>
+                <input type="radio" name="improves_academics" value="Not sure"> Not sure<br><br>
+
+                <label>9. What factors influence your reading habits? (Select all that apply)</label><br>
+                <input type="checkbox" name="influence" value="Parental influence"> Parental influence<br>
+                <input type="checkbox" name="influence" value="Peer influence"> Peer influence<br>
+                <input type="checkbox" name="influence" value="Social media trends"> Social media trends<br>
+                <input type="checkbox" name="influence" value="Academic pressure"> Academic pressure<br>
+                <input type="checkbox" name="influence" value="Book club membership"> Membership of a book club or society<br>
+                <input type="checkbox" name="influence" value="Other"> Other (please specify) <input type="text" name="influence_other"><br><br>
+            </fieldset>
+
+            <!-- Section 4: Mediums of Reading -->
+            <fieldset>
+                <legend>Section 4: Mediums of Reading</legend>
+
+                <label>11. What mediums do you use to read?</label><br>
+                <input type="checkbox" name="medium" value="Physical books"> Physical books<br>
+                <input type="checkbox" name="medium" value="E-books"> E-books<br><br>
+
+                <label>12. Do you own a personal collection of books?</label><br>
+                <input type="radio" name="collection" value="Yes"> Yes<br>
+                <input type="radio" name="collection" value="No"> No<br><br>
+            </fieldset>
+
+            <!-- Section 5: General Opinion -->
+            <fieldset>
+                <legend>Section 5: General Opinion</legend>
+
+                <label>14. How important is reading in your life? (Scale 1-10)</label><br>
+                <select name="importance">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select><br><br>
+
+                <label>15. Would you be interested in book discussions?</label><br>
+                <input type="radio" name="discussion" value="Yes"> Yes<br>
+                <input type="radio" name="discussion" value="No"> No<br>
+                <input type="radio" name="discussion" value="Maybe"> Maybe<br><br>
+            </fieldset>
 
             <button type="submit">Submit</button>
         </form>
+
+        <p id="responseMessage"></p>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
