@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Reading Habits Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Comprehensive Reading Habits Survey</h1>
+        <form id="surveyForm">
+            
+            <h2>Section 1: Demographic Information</h2>
+            <label>Gender:</label>
+            <select name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </select>
+
+            <label>Age Group:</label>
+            <select name="age_group" required>
+                <option value="18-25">18-25</option>
+                <option value="26-35">26-35</option>
+                <option value="36-45">36-45</option>
+                <option value="46+">46+</option>
+            </select>
+
+            <label>Education Level:</label>
+            <select name="education" required>
+                <option value="High School">High School</option>
+                <option value="Undergraduate">Undergraduate</option>
+                <option value="Postgraduate">Postgraduate</option>
+                <option value="Doctorate">Doctorate</option>
+            </select>
+
+            <h2>Section 2: Reading Habits</h2>
+            <label>How often do you read books?</label>
+            <select name="reading_frequency" required>
+                <option value="Daily">Daily</option>
+                <option value="Weekly">Weekly</option>
+                <option value="Monthly">Monthly</option>
+                <option value="Rarely">Rarely</option>
+                <option value="Never">Never</option>
+            </select>
+
+            <label>Preferred book genres (select multiple):</label>
+            <select name="book_genres" multiple required>
+                <option value="Fiction">Fiction</option>
+                <option value="Non-Fiction">Non-Fiction</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Science Fiction">Science Fiction</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Biography">Biography</option>
+                <option value="Self-Help">Self-Help</option>
+                <option value="Historical">Historical</option>
+            </select>
+
+            <label>Do you prefer digital books or physical books?</label>
+            <select name="book_format" required>
+                <option value="Digital">Digital</option>
+                <option value="Physical">Physical</option>
+                <option value="Both">Both</option>
+            </select>
+
+            <label>Would you be interested in participating in book discussions?</label>
+            <select name="book_discussions" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Maybe">Maybe</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
