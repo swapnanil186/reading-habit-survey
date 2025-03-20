@@ -15,93 +15,75 @@
             <!-- Section 1: Demographic Information -->
             <fieldset>
                 <legend>Section 1: Demographic Information</legend>
-
-                <label>1. Gender:</label><br>
+                <label>Gender:</label><br>
                 <input type="radio" name="gender" value="Male"> Male<br>
                 <input type="radio" name="gender" value="Female"> Female<br>
                 <input type="radio" name="gender" value="Prefer not to say"> Prefer not to say<br>
                 <input type="radio" name="gender" value="Others"> Others<br><br>
 
-                <label for="year">2. Year of Study:</label><br>
-                <select name="year" id="year">
+                <label>Year of Study:</label><br>
+                <select name="year">
                     <option value="1st Year">1st Year</option>
                     <option value="2nd Year">2nd Year</option>
                     <option value="3rd Year">3rd Year</option>
                     <option value="4th Year">4th Year</option>
-                    <option value="Other">Other (please specify)</option>
+                    <option value="Other">Other</option>
                 </select>
                 <input type="text" name="year_other" placeholder="Specify if Other"><br><br>
 
-                <label>3. Stream of Study:</label><br>
-                <input type="radio" name="stream" value="STEM"> STEM (Science, Technology, Engineering, Mathematics)<br>
+                <label>Stream of Study:</label><br>
+                <input type="radio" name="stream" value="STEM"> STEM<br>
                 <input type="radio" name="stream" value="Humanities"> Humanities<br>
                 <input type="radio" name="stream" value="Commerce"> Commerce<br>
-                <input type="radio" name="stream" value="Other"> Other (please specify) <input type="text" name="stream_other"><br><br>
+                <input type="radio" name="stream" value="Other"> Other <input type="text" name="stream_other" placeholder="Specify if Other"><br>
             </fieldset>
-
+            
             <!-- Section 2: Reading Habits -->
             <fieldset>
                 <legend>Section 2: Reading Habits</legend>
-
-                <label>4. How often do you read books?</label><br>
+                <label>How often do you read books?</label><br>
                 <input type="radio" name="reading_frequency" value="Daily"> Daily<br>
                 <input type="radio" name="reading_frequency" value="Weekly"> Weekly<br>
                 <input type="radio" name="reading_frequency" value="Monthly"> Monthly<br>
                 <input type="radio" name="reading_frequency" value="Rarely"> Rarely<br>
                 <input type="radio" name="reading_frequency" value="Never"> Never<br><br>
-
-                <label>5. Preferred book genres (Select all that apply):</label><br>
-                <input type="checkbox" name="genres" value="Crime and Mystery"> Crime and Mystery<br>
-                <input type="checkbox" name="genres" value="Fantasy"> Fantasy<br>
-                <input type="checkbox" name="genres" value="Science Fiction"> Science Fiction<br>
-                <input type="checkbox" name="genres" value="Romance"> Romance<br>
-                <input type="checkbox" name="genres" value="Biography/Literature"> Biography/Literature<br>
-                <input type="checkbox" name="genres" value="Historical"> Historical<br>
-                <input type="checkbox" name="genres" value="Self-Help"> Self-Help<br>
-                <input type="checkbox" name="genres" value="Comedy"> Comedy<br>
-                <input type="checkbox" name="genres" value="Horror"> Horror<br>
-                <input type="checkbox" name="genres" value="Satire"> Satire<br>
-                <input type="checkbox" name="genres" value="Devotional/Mythology"> Devotional/Mythology<br>
-                <input type="checkbox" name="genres" value="Other"> Other (please specify) <input type="text" name="genres_other"><br><br>
+                
+                <label>Preferred book genres (Select all that apply):</label><br>
+                <input type="checkbox" name="genre" value="Crime and Mystery"> Crime and Mystery<br>
+                <input type="checkbox" name="genre" value="Fantasy"> Fantasy<br>
+                <input type="checkbox" name="genre" value="Science Fiction"> Science Fiction<br>
+                <input type="checkbox" name="genre" value="Romance"> Romance<br>
+                <input type="checkbox" name="genre" value="Biography/Literature"> Biography/Literature<br>
+                <input type="checkbox" name="genre" value="Self-Help"> Self-Help<br>
+                <input type="checkbox" name="genre" value="Other"> Other <input type="text" name="genre_other" placeholder="Specify if Other"><br>
             </fieldset>
-
+            
             <!-- Section 3: Influence on Reading Habits -->
             <fieldset>
                 <legend>Section 3: Influence on Reading Habits</legend>
-
-                <label>8. Does reading non-curriculum books improve academic performance?</label><br>
-                <input type="radio" name="improves_academics" value="Yes"> Yes<br>
-                <input type="radio" name="improves_academics" value="No"> No<br>
-                <input type="radio" name="improves_academics" value="Not sure"> Not sure<br><br>
-
-                <label>9. What factors influence your reading habits? (Select all that apply)</label><br>
-                <input type="checkbox" name="influence" value="Parental influence"> Parental influence<br>
-                <input type="checkbox" name="influence" value="Peer influence"> Peer influence<br>
-                <input type="checkbox" name="influence" value="Social media trends"> Social media trends<br>
-                <input type="checkbox" name="influence" value="Academic pressure"> Academic pressure<br>
-                <input type="checkbox" name="influence" value="Book club membership"> Membership of a book club or society<br>
-                <input type="checkbox" name="influence" value="Other"> Other (please specify) <input type="text" name="influence_other"><br><br>
+                <label>Do you believe reading non-curriculum books improves academic performance?</label><br>
+                <input type="radio" name="academic_improvement" value="Yes"> Yes<br>
+                <input type="radio" name="academic_improvement" value="No"> No<br>
+                <input type="radio" name="academic_improvement" value="Not sure"> Not sure<br>
             </fieldset>
-
+            
             <!-- Section 4: Mediums of Reading -->
             <fieldset>
                 <legend>Section 4: Mediums of Reading</legend>
-
-                <label>11. What mediums do you use to read?</label><br>
+                <label>What mediums do you primarily use to access reading material? (Select all that apply)</label><br>
                 <input type="checkbox" name="medium" value="Physical books"> Physical books<br>
-                <input type="checkbox" name="medium" value="E-books"> E-books<br><br>
-
-                <label>12. Do you own a personal collection of books?</label><br>
-                <input type="radio" name="collection" value="Yes"> Yes<br>
-                <input type="radio" name="collection" value="No"> No<br><br>
+                <input type="checkbox" name="medium" value="E-books"> E-books<br>
+                
+                <label>Do you own a personal collection of books?</label><br>
+                <input type="radio" name="personal_collection" value="Yes"> Yes<br>
+                <input type="radio" name="personal_collection" value="No"> No<br><br>
             </fieldset>
-
+            
             <!-- Section 5: General Opinion -->
             <fieldset>
                 <legend>Section 5: General Opinion</legend>
-
-                <label>14. How important is reading in your life? (Scale 1-10)</label><br>
-                <select name="importance">
+                <label>On a scale of 1-10, how important is reading in your life?</label><br>
+                <select name="reading_importance">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -114,15 +96,14 @@
                     <option value="10">10</option>
                 </select><br><br>
 
-                <label>15. Would you be interested in book discussions?</label><br>
-                <input type="radio" name="discussion" value="Yes"> Yes<br>
-                <input type="radio" name="discussion" value="No"> No<br>
-                <input type="radio" name="discussion" value="Maybe"> Maybe<br><br>
+                <label>Would you be interested in participating in book discussions or reading groups?</label><br>
+                <input type="radio" name="book_discussion" value="Yes"> Yes<br>
+                <input type="radio" name="book_discussion" value="No"> No<br>
+                <input type="radio" name="book_discussion" value="Maybe"> Maybe<br><br>
             </fieldset>
-
+            
             <button type="submit">Submit</button>
         </form>
-
         <p id="responseMessage"></p>
     </div>
 
